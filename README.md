@@ -45,7 +45,6 @@ If a variable is declared, but not assigned, then its value is  `undefined`:
 
 ```javascript
 let x;
-
 alert(x); // shows "undefined"
 ```
 
@@ -54,16 +53,33 @@ A variable declaration introduces a new identifier.
 ```javascript
   var declaration
   let.log(declaration)  // undefined
+  declaration =  'This is an initialization'
   ```
 Above we create a new identifier called declaration. In JavaScript, variables are initialized with the value of `undefined` when they are created. What that means is if we try to log the `declaration` variable, we’ll get `undefined`.
+In contract to variable declaration, variable initialization is when you first assign a value to a variable.
 
-"Classes"
-Promises & async/await
-Object Destructuring and Spread Syntax
-Arrow Functions
-Generators
-JavaScript Modules
-Declarative vs Imperative (Ver con Tony)
-React intro
-Components
-JSX
+### let
+The main difference between `var` and `let` is that instead of being function scoped, `let` is block scoped. What that means is that a variable created with the `let` keyword is available inside the “block” that it was created in as well as any nested blocks   like in a `for` loop or an `if` statement.
+
+> var: function scoped 
+let: block scoped
+
+### Const
+Once you’ve assigned a value to a variable using `const`, you can’t reassign it to a new value.
+```javascript
+let animal =  'Dog'  
+const vehicle =  'car' 
+animal =  'cat'  // ✅ 
+handle =  'bus'  // ❌ 
+```
+
+### Classes
+###  Promises & async/await
+### Object Destructuring and Spread Syntax
+### Arrow Functions
+### Generators
+### JavaScript Modules
+### Declarative vs Imperative (Ver con Tony)
+### React intro
+### Components
+### JSX
