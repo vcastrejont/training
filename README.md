@@ -1,4 +1,4 @@
-# Javascript 
+
 
 ## Data types
 
@@ -51,9 +51,9 @@ alert(x); // shows "undefined"
 
 ## Variable declaration
 A variable declaration introduces a new identifier.
-  ```
+```javascript
   var declaration
-  console.log(declaration)  // undefined
+  let.log(declaration)  // undefined
   ```
 Above we create a new identifier called declaration. In JavaScript, variables are initialized with the value of `undefined` when they are created. What that means is if we try to log the `declaration` variable, we’ll get `undefined`.
 
